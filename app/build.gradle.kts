@@ -79,7 +79,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signConfig
+            signingConfig = null
         }
         getByName("debug") {
             isMinifyEnabled = false
@@ -87,7 +87,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signConfig
+            signingConfig = null
         }
     }
     compileOptions {
