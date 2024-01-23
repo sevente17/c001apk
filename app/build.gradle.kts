@@ -43,7 +43,9 @@ materialThemeBuilder {
 android {
     namespace = "com.example.c001apk"
     compileSdk = 34
-
+    lint {
+          baseline = file("lint-baseline.xml")
+    }
     defaultConfig {
         applicationId = "com.example.c001apk"
         minSdk = 24
